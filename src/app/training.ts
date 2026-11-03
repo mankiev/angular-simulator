@@ -16,7 +16,7 @@ let textFormat: "uppercase" | "lowercase" | "capitalize";
 interface IUser {
   firstName: string;
   lastName: string;
-  age: number;
+  age?: number;
 }
 
 // №7
