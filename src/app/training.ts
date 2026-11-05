@@ -43,7 +43,7 @@ function changeText(text: string, format: typeof textFormat): string {
     } else if (format === "capitalize") {
       return text[0].toUpperCase() + text.slice(1).toLowerCase()
     }
-  return "Не правильное занчение"
+  return "Неправильное значение"
 }
 textFormat = "uppercase";
 changeText("Hello", textFormat);
@@ -74,4 +74,4 @@ const users: IUser[] = [
   }
 ]
 
-const ageLessThan18 = users.filter(user => user.age < 18)
+const ageLessThan18 = users.filter(user => user.age && user.age < 18)
