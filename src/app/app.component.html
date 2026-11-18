@@ -1,1 +1,89 @@
-<h1 style="display: flex; justify-content: center; font-family: sans-serif;">NGX SIMULATOR</h1>
+<header class="header">
+  <div class="header__container container">
+    
+    <a href="" class="header__logo" aria-label="Румтибет - главная">
+      <img src="/images/icon/logo.svg" alt="">
+      <span class="header__logo-text fs-16 uppercase bold">{{ logoTitle }}</span>
+    </a>
+    
+    <nav class="header__nav" aria-label="Основная навигация">
+      <ul class="header__nav-list semi-bold fs-18">
+        <li class="header__nav-item">
+          <a href="" class="header__nav-link">
+            Главная
+          </a>
+        </li>
+        <li class="header__nav-item">
+          <a href="" class="header__nav-link">
+            Про гида
+          </a>
+        </li>
+        <li class="header__nav-item">
+          <a href="" class="header__nav-link">
+            Программа тура
+          </a>
+        </li>
+        <li class="header__nav-item">
+          <a href="" class="header__nav-link">
+            Стоимость
+          </a>
+        </li>
+        <li class="header__nav-item">
+          <a href="" class="header__nav-link">
+            Блог
+          </a>
+        </li>
+        <li class="header__nav-item">
+          <a href="" class="header__nav-link">
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
+    <button class="header__btn bgc-w br-4" type="button">
+      Консультация
+    </button>
+    
+  </div>
+</header>
+<main class="main">
+  <section class="hero">
+    
+    <div class="hero__bg"></div>
+    
+    <div class="hero__content container">
+      <h1 class="hero__title uppercase regular">
+        Насладись прогулкой в горах с командой единомышленников
+      </h1>
+      <form action="" class="hero__filter filter-tour" method="get">
+        <div class="filter-tour__item">
+          <label for="tour" class="filter-tour__label">выберите из списка</label>
+          <select name="tour" id="tour" class="filter-tour__select">
+            <option value="" disabled selected>Локация для похода</option>
+            <option value="jairah">Джейрах</option>
+            <option value="arkhyz">Архыз</option>
+            <option value="elbrus">Эльбрус</option>
+          </select>
+        </div>
+        <div class="filter-tour__item">
+          <label for="" class="filter-tour__label">укажите дату</label>
+          <input type="date" class="filter-tour__date">
+        </div>
+        <div class="filter-tour__item">
+          <label for="participants" class="filter-tour__label">выберите из списка</label>
+          <select name="participants" id="participants" class="filter-tour__select">
+            <option value="" disabled selected>Участники</option>
+            <option value="one">Один</option>
+            <option value="with family">С семьей</option>
+            <option value="collective">Коллектив</option>
+          </select>
+        </div>
+        <button class="filter-tour__btn" type="button">
+          Найти программу
+        </button>
+      </form>
+      
+    </div>
+  </section>
+</main>
